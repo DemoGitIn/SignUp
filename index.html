@@ -1,40 +1,35 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Sign Up</title>
-  </head>
-  <body>
-    <form class="form">
-      <article class="form__text">
-        <h1>Hello.</h1>
-        <h2>Nice to meet you.</h2>
-      </article>
-      <article id="box-1" class="form__box">
-        <p>
-          <input type="text" placeholder="Name" />
-        </p>
-      </article>
-      <article id="box-2" class="form__box">
-        <p>
-          <input type="text" placeholder="Email address" />
-        </p>
-      </article>
-      <article id="box-3" class="form__box">
-        <p>
-          <input type="password" placeholder="Password" />
-        </p>
-      </article>
-      <article class="form__send">
-        <p>
-          <input type="submit" value="Sign Up" class="form__send__button" />
-        </p>
-      </article>
-      <article class="form__item">
-        <p>Already have an account? <a href="">Sign in</a></p>
-      </article>
-    </form>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <form class="form">
+    <div class="form__signup-box">
+      <h1>Hello.</h1>
+      <h2>Nice to meet you.</h2>
+    </div>
+    <div class="form__group">
+      <input type="text" name="fullName" id="fullName" placeholder="Name">
+    </div>
+    <div class="form__group">
+      <input type="email" name="email" id="email" placeholder="Email address">
+    </div>
+    <div class="form__group">
+      <input type="password" name="password" id="password" placeholder="Password">
+    </div>
+    <button type="submit" class="form__btn-submit">
+      Sign Up
+    </button>
+    <div class="form__signup-link">
+      Already have an account? <a href="">Sign in</a>
+    </div>
+  </form>
+</body>
+
 </html>
