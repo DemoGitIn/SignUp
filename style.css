@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* CSS reset */
+
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #ce97b0 inset;
+}
+
+body {
+  background: rgb(221, 85, 135);
+  background: linear-gradient(
+    180deg,
+    rgba(221, 85, 135, 1) 0%,
+    rgba(129, 16, 249, 1) 100%
+  );
+  min-height: calc(100vh-100px);
+  letter-spacing: 2px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form p {
+  display: flex;
+  justify-content: center;
+}
+
+.form .form__box {
+  font-size: 0; 
+}
+
+.form,
+.form-box {
+  width: 30%;
+}
+
+.form__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.form__text h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+::placeholder {
+  color: white;
+  background: #ce97b0;
+}
+
+#box-1 input,
+#box-2 input,
+#box-3 input {
+  font-size: 20px;
+  border: 0;
+}
+
+#box-1 input,
+#box-2 input {
+  border-bottom: solid 1px white;
+}
+
+#box-1 p input,
+#box-2 p input,
+#box-3 p input {
+  background: #ce97b0;
+  width: 200%;
+  height: 80px;
+  padding-left: 20px;
+}
+
+.form__send input {
+  color: white;
+  background: #e63e6d;
+  border: 0;
+  width: 500%;
+  height: 70px;
+  font-size: 30px;
+}
+
+.form__item a {
+  color: #e63e6d;
+}
+
+.form__send__button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Media Query */
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .form__text,
+  .form__item {
+    font-size: small;
+    width: 100%;
+  }
+
+  .form__text {
+    text-align: center;
+  }
+
+  #box-1 p input,
+  #box-2 p input,
+  #box-3 p input {
+    width: 90%;
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  .form__send input {
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .form,
+  .form-box {
+    width: 100%;
+  }
+}
